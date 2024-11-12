@@ -4,8 +4,6 @@ Welcome to the repository for exercises related to **Citeforma's Data Analyst Co
 
 ---
 
-## Aula 4
-
 ### Authorize Script Execution
 
 To allow a script to be executed, use the following command:
