@@ -1,0 +1,19 @@
+# Citeforma - 10805 Linguagens Scripting
+#
+# Aula 4
+# Exercicio 3
+#
+
+#!/bin/bash
+
+read -p "Digite o nome do ficheiro para guardar a lista de processos: " ficheiro
+
+# param -z cria um ficheiro novo caso nao exista
+if [ -z "$ficheiro" ]; then
+    echo "O ficheiro $ficheiro nao existe."
+    exit 1
+fi
+
+ps aux > "$ficheiro"
+
+echo "Lista de processos guardada em '$ficheiro'."

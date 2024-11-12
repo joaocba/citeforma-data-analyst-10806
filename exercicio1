@@ -1,0 +1,23 @@
+# Citeforma - 10805 Linguagens Scripting
+#
+# Aula 4
+# Exercicio 1
+#
+
+#!/bin/bash
+
+read -p "Digite o diretorio destino: " dir
+
+if [ ! -d "$dir" ]; then
+    echo "O diretório $dir nao existe."
+    exit 1
+fi
+
+cd $dir
+
+echo "Conteudo do diretorio:"
+ls -la
+
+mkdir -p backup
+
+mv *.txt backup/
