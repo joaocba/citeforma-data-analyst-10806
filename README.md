@@ -4,9 +4,7 @@ Welcome to the repository for exercises related to **Citeforma's Data Analyst Co
 
 ---
 
-## Aula 4 - Script Execution
-
-In this section, we’ll focus on using the Git Bash command line to manage and run scripts effectively.
+## Aula 4
 
 ### Authorize Script Execution
 
