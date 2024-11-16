@@ -1,0 +1,15 @@
+# Citeforma - 10805 Linguagens Scripting
+#
+# Aula 5
+# Exercicio 3
+#
+
+#!/bin/bash
+
+URL="https://api.openweathermap.org/data/2.5/weather?q=London&appid=0ba5efa4d2992826b448bf7f47a9a093"
+
+infoTempo=$(curl "URL")
+
+echo "Info do tempo da cidade $1: $infoTempo"
+
+echo $infoTempo > "$1_$(date + "%Y-%m-%d").json"
